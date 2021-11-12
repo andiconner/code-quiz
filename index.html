@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Code Quiz by andi Conner</title>
@@ -11,21 +10,20 @@
 
 <body>
 
-    <div id="header">
-        <h1>CODE QUIZ</h1>
-        <br>
-        <button type="submit" value="Submit" class="btn btn-start">Start Quiz</button>
-        <hr>
-    </div>
     <div class="container">
         <div class="quiz-box">
             <div id="quiz">
+                <h1>CODE QUIZ</h1>
+                    <button type="submit" value="Submit" class="btn-start">Start Quiz</button>
+                    
                 <div class="quiz-header">
                     <p id="progress">Question x of y</p>
-                    <p id="count-down"></p>
+                    <p id="count-down">10</p>
                 </div>
+                <hr>
+                <p id="question">Question</p>
+                <hr>
                 <!--buttons with questions-->
-                <p id="question"></p>
                 <div class="buttons">
                     <button class="btn" id="btn0">
                         A.<span id="choice0"></span>
@@ -52,157 +50,6 @@
                 </footer>
             </div>
         </div>
-    </div>
-
-        
-    
-<!--questions start-->
-    <!--question 1-->
-    <div>
-        <h3>Question 1 of 5</h3>
-        <p>What does HTML stand for?</p>
-        <form id="quizform">
-            <div>
-                <label>
-                    Home Tool Markup Language
-                </label>
-            </div>
-
-            <div>
-                <label>
-                    Home Text Markup Language
-                </label>
-            </div>
-
-            <div>
-                <label>
-                    Hyperlinks and Text Markup Language
-                </label>
-            </div>
-
-        </form>
-    </div>
-
-    <!--question 2-->
-    <div>
-        <h3>Question 2 of 5</h3>
-        <p>Inside which HTML element do we put the JavaScript?</p>
-        <form id="quizform">
-            <div>
-                <label>
-                    <p>&lt;js&gt;</p>
-                </label>
-            </div>
-
-            <div>
-                <label>
-                    <p>&lt;scripting&gt;</p>
-                </label>
-            </div>
-
-            <div>
-                <label>
-                    <p>&lt;javascript&gt;</p>
-                </label>
-            </div>
-
-            <div>
-                <label>
-                    <p>&lt;script&gt;</p>
-                </label>
-            </div>
-
-        </form>
-    </div>
-    
-    <!--question 3-->
-    <div>
-        <h3>Question 3 of 5</h3>
-        <p>Where is the correct place to insert a JavaScript?</p>
-        <form id="quizform">
-            <div>
-                <label>
-                    <p> Both the &lt;head&gt; section and the &lt;body&gt; section are correct</p>
-                </label>
-            </div>
-
-            <div>
-                <label>
-                    <p> The &lt;head&gt; section</p>
-                </label>
-            </div>
-
-            <div>
-                <label>
-                    <p> The &lt;body&gt; section</p>
-                </label>
-            </div>
-
-        </form>
-    </div>
-    
-    <!--question 4-->
-    <div>
-        <h3>Question 4 of 5</h3>
-        <p>How do you write "Hello World" in an alert box?</p>
-        <form id="quizform">
-            <div>
-                <label>
-                    <p> msgBox("Hello World");</p>
-                </label>
-            </div>
-
-            <div>
-                <label>
-                    <p> msg("Hello World");</p>
-                </label>
-            </div>
-
-            <div>
-                <label>
-                    <p>  alert("Hello World");</p>
-                </label>
-            </div>
-
-            <div>
-                <label>
-                    <p> alertBox("Hello World");</p>
-                </label>
-            </div>
-
-        </form>
-    </div>
-
-    <!--question 5-->
-    <div>
-        <h3>Question 5 of 5</h3>
-        <form id="quizform">
-            <div>
-                <label>
-                    <p> function = Geekfunc() </p>
-                </label>
-            </div>
-
-            <div>
-                <label>
-                    <p> function Geekfunc() </p>
-                </label>
-            </div>
-
-            <div>
-                <label>
-                    <p>  function := Geekfunc()</p>
-                </label>
-            </div>
-
-            <div>
-                <label>
-                    <p>function : Geekfunc()</p>
-                </label>
-            </div>
-
-        </form>
-
     </div>
 
     <script src="assets/js/script.js"></script>
