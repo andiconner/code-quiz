@@ -7,7 +7,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     color:black;
-    background-image: url('assets/images/ac_background.jpg');
+    background-image: url('../images/ac_background.jpg');
     background-size: cover;
     background-position:center;
     background-attachment: fixed;
@@ -17,9 +17,8 @@ body {
 
 p {
     line-height: 1.5;
+    text-align: center;
 }
-
-
 
 .container {
     max-width: 900px;
@@ -29,8 +28,6 @@ p {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    
-
 }
 
 .quiz-box {
@@ -42,15 +39,13 @@ p {
     border-radius: 5px;
 }
 
-.quiz-box h1 {
+.quiz-intro h1 {
     background-color: var(--primary-color);
     font-size: 20px;
     text-align: center;
     color: white;
     padding: 15px;
 }
-
-
 
 .quiz-header {
     display: flex;
@@ -62,7 +57,6 @@ p {
     
     font-size: 12px;
     font-weight: 700;
-
 }
 
 .quiz-header #count-down {
@@ -145,4 +139,8 @@ p {
 
 .quiz-repeat a:hover {
     background-color:var(--secondary-color);
+}
+
+.hide {
+    display: none;
 }

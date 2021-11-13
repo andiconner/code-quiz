@@ -11,39 +11,50 @@
 <body>
 
     <div class="container">
-        <div class="quiz-box">
+        <div class="quiz-intro">
+            <h1>CODE QUIZ</h1>
+            <p>Try to answer the following code-related questions within the time limit.<br>
+            Keep in mind that incorrect answers will penalize your score/time by ten seconds!
+            </p>
+            <button type="submit" value="Submit" class="btn-start">Start Quiz</button>
+        </div>
+        <div class="quiz-box hide">
             <div id="quiz">
-                <h1>CODE QUIZ</h1>
-                    <button type="submit" value="Submit" class="btn-start">Start Quiz</button>
+                
                     
                 <div class="quiz-header">
-                    <p id="progress">Question x of y</p>
-                    <p id="count-down">10</p>
+                    <h3>Code Quiz</h3>
+                    <p id="count-down"></p>
                 </div>
                 <hr>
-                <p id="question">Question</p>
+                <p id="question"></p>
                 <hr>
                 <!--buttons with questions-->
                 <div class="buttons">
                     <button class="btn" id="btn0">
                         A.<span id="choice0"></span>
                     </button>
+                    
                 </div>
                 <div class="buttons">
                     <button class="btn" id="btn1">
                         B.<span id="choice1"></span>
                     </button>
+                    
                 </div>
                 <div class="buttons">
                     <button class="btn" id="btn2">
                         C.<span id="choice2"></span>
                     </button>
+                    
                 </div>
                 <div class="buttons">
                     <button class="btn" id="btn3">
                         D.<span id="choice3"></span>
                     </button>
+                    
                 </div>
+                <div id="score"></div>
                 <hr>
                 <footer>
                     <h4>❤️ Made with love by Andi Conner</h4>
