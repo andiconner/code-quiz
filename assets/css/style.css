@@ -114,11 +114,12 @@ p {
     background-color:var(--primary-color);
 }
 
-#score {
+#answer {
     color: black;
-    text-align: center;
-    font-size: 10px;
-    margin-bottom: 12px;
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding-top: 15px;
 }
 
 .quiz-repeat {

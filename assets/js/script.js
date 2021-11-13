@@ -7,19 +7,25 @@ var btn0 = document.querySelector('#btn0')
 var btn1 = document.querySelector('#btn1')
 var btn2 = document.querySelector('#btn2')
 var btn3 = document.querySelector('#btn3')
-var score = document.querySelector('#score')
 
 var clockId
 
 var timeLeft = 75
 
-var index=0
+var index = 0
+var score = 0
+
+
+
+
+
 var questionsArr = [
     {
         question:"Commonly used data types DO not include:",
         choices: ["a. strings", "b. booleans", "c. alerts", "d. numbers"],
         solution: 2
     },
+    
 
     {
         question:"The condition in an if / else statement is enclosed with _______",
@@ -57,17 +63,30 @@ btnStart.addEventListener("click", function () {
 function startCountDown() {
     countDown.textContent=timeLeft
     timeLeft--
-
 }
+
+
 // DISPLAY QUESTION
 function displayQuestion (){
+    
+    //show questions and options (choices)
     question.textContent=questionsArr[index].question
     btn0.textContent=questionsArr[index].choices[0]
-
     btn1.textContent=questionsArr[index].choices[1]
     btn2.textContent=questionsArr[index].choices[2]
     btn3.textContent=questionsArr[index].choices[3]
+    
+    }
+
+
+//display answer
+function displayAnswer (){
+    
+    
 }
+
+
+
 
 btn0.addEventListener("click",function(){
     index++
@@ -89,3 +108,5 @@ btn3.addEventListener("click",function(){
     displayQuestion ()
     
 })
+
+
